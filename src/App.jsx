@@ -27,8 +27,12 @@ const router = createBrowserRouter(
         <Route path="/country/:id" element={<CountryDetails />} />
       </Route>
     </>
-  )
+  ),
+  {
+    basename: "/Country-Atlas" 
+  }
 );
+
 
 const App = () => {
   return <RouterProvider router={router} />;
